@@ -10,6 +10,7 @@ collections:
     folder: "/"
     create: true
     fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "pages"}
       - {label: "Title", name: "title"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "entries"
