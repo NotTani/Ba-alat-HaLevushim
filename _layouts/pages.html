@@ -6,7 +6,9 @@ layout: base
 
   <div class="navbar">
     {% for page in site.pages %}
-      <a href="{{page.url}}">{{page.title}}</a>
+      {% if page.title %}
+        <a href="{{page.url}}">{{page.title}}</a>
+      {% endif %}
     {% endfor %}
   </div>
 
