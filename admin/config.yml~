@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "images/"
+
+collections:
+  - name: "entries"
+    label: "Entries"
+    folder: "_posts/entries"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "Title", widget: "string"}
+      - {label: "Begin Date", name: "begin-date", widget: "datetime"}
+      - {label: "End Date", name: "end-date", widget: "datetime"}
+      - {label: "Full Length Image", name: "full-image", widget: "image"}
+      - {label: "Model Image", name: "model-image", widget: "image"}
+      - {label: "Quote", name: "quote", widget: "markdown"}
+      - {label: "Description", name: "body", widget: "markdown"}

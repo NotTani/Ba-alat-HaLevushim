@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "images/"
+
+collections:
+  - name: "entries"
+    label: "Entries"
+    folder: "_posts/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "detail"}
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Byline (dates and locations)", name: "byline", widget: "string"}
+      - {label: "Full Length Image", name: "full_image", widget: "image"}
+      - {label: "Folded Image (ryan reynolds)", name: "folded_image", widget: "image"}
+      - {label: "Historical Image", name: "historical_image", widget: "image"}
+      - {label: "Teaching", name: "teaching", widget: "markdown"}
+      - {label: "Blessing", name: "blessing", widget: "markdown"}
+      - {label: "Youtube Link", name: "youtube_link", widget: "markdown"}
+      - {label: "Description", name: "body", widget: "markdown"}

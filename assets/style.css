@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.detail {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.col {
+    padding: 10px;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+.right-col {
+    min-width: 300px;
+    max-width: 450px;
+}
+
+img, iframe {
+    border-radius: 5px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.subheading {
+    color: grey;
+    font-style: italic;
+}
+
+.title {
+    text-align: center;
+    line-height: 0.2em;
+    padding: 20px;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    padding: 5px;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.smaller-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.image-container img {
+    height: 300px;
+    width: auto;
+}
+
+.image-description {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+
+.image-container:hover .image-description {
+    visibility: visible;
+    opacity: 0.5;
+
+    transition: visibility 0.5s, opacity 0.5s;
+}
+
+@media(max-width: 900px) {
+    .images {
+        justify-content: center;
+   }
+   .smaller-content {
+       flex-direction: column;
+   }
+}

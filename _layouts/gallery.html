@@ -1,0 +1,27 @@
+---
+title: Home
+layout: base
+---
+<div class="content">
+  <h1 class="title">Title</h1>
+
+  <div class="navbar">
+      <a href="#">About</a>
+      <a href="#">Credits</a>
+  </div>
+
+  <div class="images">
+    {% for entry in site.posts %}
+      <div class="image-container">
+          <a href="{{ entry.url }}">
+          <div class="image-description">
+              <h1>{{ entry.title }}</h1>
+          </div>
+          </a>
+          <img src="{{ entry.folded_image }}">
+      </div>
+    {% endfor %}
+  </div>
+
+</div>
+<script src="script.js"></script>
