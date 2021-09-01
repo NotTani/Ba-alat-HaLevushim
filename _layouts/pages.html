@@ -5,11 +5,13 @@ layout: base
   <h1 class="title">{{ site.title }}</h1>
 
   <div class="navbar">
+    <a href="/">Home</a>
     {% for page in site.pages %}
       {% if page.title %}
         <a href="{{page.url}}">{{page.title}}</a>
       {% endif %}
     {% endfor %}
+    <a href="/admin">Admin</a>
   </div>
 
   {{ content }}
