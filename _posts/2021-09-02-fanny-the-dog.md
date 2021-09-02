@@ -4,7 +4,7 @@ title: Fanny, the dog
 byline: 1888-?
 full_image: /images/a4966d56-cba9-4bba-af88-29241e1a0bfd.jpeg
 folded_image: /images/571d5206-a8d1-4009-ae3e-d50f7546e986.jpeg
-historical_image: https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg/220px-Deadpool_2_Japan_Premiere_Red_Carpet_Ryan_Reynolds_%28cropped%29.jpg
+historical_image: https://homepage.nottani.repl.co/images/images.jpeg
 teaching: The **[Indian roller](https://en.wikipedia.org/wiki/Indian_roller
   "Indian roller")** is a bird of the
   family [Coraciidae](https://en.wikipedia.org/wiki/Coraciidae "Coraciidae"). It
