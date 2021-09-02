@@ -18,13 +18,13 @@ layout: base
 
             <h3 class="subheading">Teaching</h3>
             <p class="detail">
-                {{ page.teaching }}
+                {{ page.teaching | markdownify }}
             </p>
 
 
             <h3 class="subheading">Blessing</h3>
             <p class="detail">
-                {{ page.blessing }}
+                {{ page.blessing | markdownify }}
             </p>
         </div>
         <div class="col right-col">
