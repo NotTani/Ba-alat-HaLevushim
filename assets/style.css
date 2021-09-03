@@ -125,7 +125,7 @@ p {
     .images {
         justify-content: center;
    }
-   .smaller-content {
+   .two-col-view {
        flex-direction: column;
    }
 }
