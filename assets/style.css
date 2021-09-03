@@ -1,20 +1,32 @@
+/*
+  style.css
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
+/* 1. Overall */
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.header {
-    text-align: center;
+/* 2. Views & Layout */
+
+.content {
+    max-width: 900px;
+    margin: auto;
 }
 
-.detail {
-    border: 1px solid lightgrey;
-    border-radius: 5px;
-    padding: 5px;
+.two-col-view {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.col {
+.col, .right-col {
     padding: 10px;
     min-width: 300px;
     max-width: 800px;
@@ -23,28 +35,6 @@ body {
 .right-col {
     min-width: 300px;
     max-width: 450px;
-}
-
-img, iframe {
-    border-radius: 5px;
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
-
-.subheading {
-    color: grey;
-    font-style: italic;
-}
-
-.title {
-    text-align: center;
-    line-height: 0.2em;
-    padding: 20px;
-    margin: 0;
 }
 
 .navbar {
@@ -57,25 +47,15 @@ img, iframe {
     text-decoration: none;
 }
 
-p {
-    line-height: 1.2em;
-}
-
-.content {
-    max-width: 900px;
-    margin: auto;
-}
-
-.smaller-content {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+img, iframe, .image-description {
+    border-radius: 5px;
 }
 
 .images {
     display: flex;
     flex-wrap: wrap;
 }
+
 
 .image-container {
     position: relative;
@@ -112,6 +92,35 @@ p {
     transition: visibility 0.5s, opacity 0.5s;
 }
 
+/* 3. Typography */
+
+p {
+    line-height: 1.2em;
+}
+
+.title {
+    text-align: center;
+    line-height: 0.2em;
+    padding: 20px;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.subheading {
+    color: grey;
+    font-style: italic;
+}
+
+.detail {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* 4. Media queries */
 @media(max-width: 900px) {
     .images {
         justify-content: center;

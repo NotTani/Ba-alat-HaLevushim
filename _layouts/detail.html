@@ -6,31 +6,47 @@ layout: base
 <div>
     <div class="header">
         <h1>{{page.title}}</h1>
-        <p class="subheading">{{page.byline}}</p>
+        {% if page.byline %}
+          <p class="subheading">{{page.byline}}</p>
+        {% endif %}
     </div>
-    <div class="smaller-content">
+    <div class="two-col-view">
         <div class="col">
             <p style="margin-top: 0;">
                 <img src="{{ page.historical_image }}" style="float: left; margin-right: 5px; margin-bottom: 5px;">
                 {{ content }}
             </p>
-            <img src="{{ page.full_image }}" style="width: 100%;">
 
-            <h3 class="subheading">Teaching</h3>
-            <p class="detail">
-                {{ page.teaching | markdownify }}
-            </p>
+            {% if page.full_image %}
+              <img src="{{ page.full_image }}" style="width: 100%;">
+            {% endif %}
 
+            {% if page.teaching %}
+              <h3 class="subheading">Teaching</h3>
+              <div class="detail">
+                  {{ page.teaching | markdownify }}
+              </div>
+            {% endif %}
 
-            <h3 class="subheading">Blessing</h3>
-            <p class="detail">
-                {{ page.blessing | markdownify }}
-            </p>
+            {% if page.blessing %}
+              <h3 class="subheading">Blessing</h3>
+              <div class="detail">
+                  {{ page.blessing | markdownify }}
+              </div>
+            {% endif %}
         </div>
         <div class="col right-col">
-            <img src="{{ page.folded_image }}" style="width: 100%;">
+            {% if page.folded_image %}
+              <img src="{{ page.folded_image }}" style="width: 100%;">
+            {% endif %}
 
-            <iframe width="100%" height="315" src="{{ page.youtube_link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {% if page.youtube_link %}
+              <iframe
+                width="100%" height="315"
+                src="{{ page.youtube_link | split: '?v=' | last | prepend: "https://youtube.com/embed/" }}"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            {% endif %}
         </div>
     </div>
 </div>
