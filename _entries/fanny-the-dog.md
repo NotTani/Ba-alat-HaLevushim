@@ -1,6 +1,7 @@
 ---
 layout: detail
-title: Fanny, the dog
+title: בְּרֵאשִׁ֖ית בָּרָ֣
+english_name: Fanny, the dog
 byline: 1888-?
 full_image: /images/a4966d56-cba9-4bba-af88-29241e1a0bfd.jpeg
 folded_image: /images/571d5206-a8d1-4009-ae3e-d50f7546e986.jpeg
