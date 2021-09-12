@@ -21,6 +21,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "detail"}
       - {label: "Name", name: "title", widget: "string"}
+      - { label: "English Name", name: "english_name", widget: "string" }
       - {label: "Byline (dates and locations)", name: "byline", widget: "string"}
       - {label: "Full Length Image", name: "full_image", widget: "image"}
       - {label: "Folded Image (ryan reynolds)", name: "folded_image", widget: "image"}
