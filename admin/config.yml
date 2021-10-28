@@ -21,14 +21,14 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "detail"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "detail", required: false}
       - {label: "Name", name: "title", widget: "string"}
-      - { label: "English Name", name: "english_name", widget: "string" }
-      - {label: "Byline (dates and locations)", name: "byline", widget: "string"}
-      - {label: "Full Length Image", name: "full_image", widget: "image"}
-      - {label: "Folded Image (ryan reynolds)", name: "folded_image", widget: "image"}
-      - {label: "Historical Image", name: "historical_image", widget: "image"}
-      - {label: "Teaching", name: "teaching", widget: "markdown"}
-      - {label: "Blessing", name: "blessing", widget: "markdown"}
-      - {label: "Youtube Link", name: "youtube_link", widget: "string"}
-      - {label: "Description", name: "body", widget: "markdown"}
+      - { label: "English Name", name: "english_name", widget: "string"}
+      - {label: "Byline (dates and locations)", name: "byline", widget: "string", required: false}
+      - {label: "Full Length Image", name: "full_image", widget: "image", required: false}
+      - {label: "Folded Image (ryan reynolds)", name: "folded_image", widget: "image", required: false}
+      - {label: "Historical Image", name: "historical_image", widget: "image", required: false}
+      - {label: "Teaching", name: "teaching", widget: "markdown", required: false}
+      - {label: "Blessing", name: "blessing", widget: "markdown", required: false}
+      - {label: "Youtube Link", name: "youtube_link", widget: "string", required: false}
+      - {label: "Description", name: "body", widget: "markdown", required: false}
